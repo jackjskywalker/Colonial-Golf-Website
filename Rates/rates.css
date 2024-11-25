@@ -1,0 +1,397 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #333;
+    background-color: #C3BA99;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 30px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #C3BA99;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+/**** Header Section ****/
+.header-sect {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../Images/about-bg.jpg);
+    position: relative;
+}
+
+.header-text {
+    font-size: 45px;
+    margin-top: 15%;
+    color: #fff;
+    text-align: center;
+}
+
+.btn {
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #C3BA99;
+    color: white;
+    font-size: 18px;
+    margin: 20px 0;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #C3BA99;
+}
+
+
+/**** Pricing Section ****/
+.pricing-sect {
+    padding: 5em 15%;
+    background-color: white;
+}
+
+.pricing-sect h1 {
+    padding-bottom: 0.5em;
+}
+
+.pricing-sect button {
+    padding: 12px 25px;
+    border-radius: 10px;
+    background-color: #C3BA99;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.pricing-sect button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/**** Select Dropdowns ****/
+select {
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #555;
+    font-size: 16px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(95, 75, 62, 0.5);
+    outline: none;
+}
+
+
+/**** Expandable List Styling ****/
+.expandable-list {
+    margin-top: 20px;
+}
+
+.title {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.title:hover {
+    transform: scale(1.05);
+}
+
+.content {
+    display: none;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content li {
+    padding: 8px 0;
+    font-size: 1rem;
+    color: #555;
+    border-bottom: 1px solid #eee; 
+}
+
+.content li:last-child {
+    border-bottom: none;
+}
+
+/**** Details Box ****/
+.details {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); 
+    border: none; 
+}
+
+.details h2 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details li {
+    padding: 8px 0;
+    font-size: 1rem;
+    color: #555;
+    border-bottom: 1px solid #eee; 
+}
+
+.details li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .pricing-sect {
+        padding: 3em 10%;
+    }
+    select {
+        padding: 12px;
+    }
+}
+
+
+/*** Membership ****/
+
+.membership-sect {
+    padding: 5em 15%;
+    background-color: #C3BA99;
+}
+
+.membership-sect h1 {
+    padding-bottom: 0.5em;
+}
+
+.membership-sect .details {
+    line-height: 1.5;
+}
+
+/**** Carousel Section ****/
+
+button{
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: none;
+    transition: all .3s ease-in-out;
+}
+
+.carousel-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-section h1 {
+    color: white;
+    font-size:40px;
+    margin-top: 2em; 
+  }  
+
+.carousel-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.25s ease-in;
+  padding-bottom: 3em;
+}
+
+.carousel-view .item-list {
+  max-width: 80%;
+  width: 80vw;
+  padding: 30px 20px;
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  transition: all 0.25s ease-in;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.item-list::-webkit-scrollbar {
+  display: none;
+}
+
+.prev-btn {
+  background: none;
+  cursor: pointer;
+}
+
+.next-btn {
+  cursor: pointer;
+}
+
+.prev-btn svg path,
+.next-btn svg path {
+    fill: white;
+}
+
+.item {
+  scroll-snap-align: center;
+  min-width: 300px;
+  height: auto;
+  background-color: #C3BA99;
+  border-radius: 5px;
+}
+
+/*** Footer Section ***/
+
+.footer {
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 20em;
+    padding: 0.5em 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    gap: 0.5em;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-text {
+    display: none;
+    font-size: 1.2em;
+    color: #444;
+    padding-right: 0.5em;
+    transition: opacity 0.3s ease;
+}
+
+.contact-item:hover {
+    background-color: white;
+    border-radius: 15px;
+    transform: scale(1.05); /* Slight zoom effect for better hover feedback */
+}
+
+.contact-item:hover .contact-text {
+    display: inline-block;
+    color: #444;
+    opacity: 1; /* Ensure text becomes visible smoothly */
+}
+
+.copyright {
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+    padding: 1em 0;
+}
+
+/* Additional Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}

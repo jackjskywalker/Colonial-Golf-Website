@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./rates.css">
+    <title>Rates - Colonial Hills Golf Club</title>
+</head>
+<body>
+    <div class="header-sect">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../About/about.html">About</a></li>
+                    <li><a href="../Rates/rates.html">Rates</a></li>
+                    <li><a href="../Contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <div class="header-text">
+                <h1>COURSE RATES</h1>
+                <br>
+                <a class="btn" href="#pricing-sect">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing-sect" id="pricing-sect">
+        <h1>Golf Pricing</h1>
+    
+        <label for="daySelect">Select Day:</label>
+        <select id="daySelect">
+            <option value="">--Select a Day--</option>
+            <option value="weekday">Weekday</option>
+            <option value="weekend">Weekend/Holiday</option>
+        </select>
+    
+        <label for="timeSelect">Select Time:</label>
+        <select id="timeSelect">
+            <option value="">--Select Time--</option>
+            <option value="morning">Morning (Until 2 PM)</option>
+            <option value="twilight">Twilight (After 2 PM)</option>
+        </select>
+    
+        <button onclick="displayPricing()">Get Pricing</button>
+    
+        <div id="pricingDetails" class="details" style="display: none;"></div>
+
+        <div class="expandable-list">
+            <!-- Expanded pricing details -->
+            <div class="title" onclick="toggleContent('morning')">Morning Weekday Rates (Until 2PM)</div>
+            <div class="content" id="morning">
+                <ul>
+                    <li>$42.00 (18 holes w/ cart)</li>
+                    <li>$30.00 (9 holes w/ cart)</li>
+                    <li>$32.00 (18 holes walking)</li>
+                    <li>$25.00 (9 holes walking)</li>
+                </ul>
+            </div>
+    
+            <div class="title" onclick="toggleContent('twilight')">Twilight Weekday Rates (After 2PM)</div>
+            <div class="content" id="twilight">
+                <ul>
+                    <li>$38.00 (18-holes w/ cart)</li>
+                    <li>$27.00 (9-holes w/ cart)</li>
+                    <li>$29.00 (18 holes walking)</li>
+                    <li>$24.00 (9 holes walking)</li>
+                </ul>
+            </div>
+    
+            <div class="title" onclick="toggleContent('weekend')">Weekend & Holiday Rates (Until 2PM)</div>
+            <div class="content" id="weekend">
+                <ul>
+                    <li>$52.00 (18 holes w/ cart)</li>
+                    <li>$38.00 (9 holes w/ cart)</li>
+                    <li>$41.00 (18 holes walking)</li>
+                    <li>$30.00 (9 holes walking)</li>
+                </ul>
+            </div>
+    
+            <div class="title" onclick="toggleContent('twilightWeekend')">Weekend & Holiday Twilight (After 2PM)</div>
+            <div class="content" id="twilightWeekend">
+                <ul>
+                    <li>$42.00 (18 holes w/ cart)</li>
+                    <li>$31.00 (9 holes w/ cart)</li>
+                    <li>$34.00 (18 holes walking)</li>
+                    <li>$26.00 (9 holes walking)</li>
+                </ul>
+            </div>
+
+            <div class="title" onclick="toggleContent('senior')">Senior (60+) Weekdays Only</div>
+            <div class="content" id="senior">
+                <ul>
+                    <li>$35.00 (18 holes w/ cart)</li>
+                    <li>$25.00 (9 holes w/ cart)</li>
+                    <li>$24.00 (18 holes walking)</li>
+                    <li>$21.00 (9 holes walking)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-section">
+        <h1>COURSE GALLERY</h1>
+        <div class="carousel-view">
+            <button id="prev-btn" class="prev-btn">
+                <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+                <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                </svg>
+            </button>
+        <div id="item-list" class="item-list">
+            <img id="item" class="item" src="../images/gallery-1.jpg"/>
+            <img id="item" class="item" src="../images/gallery-2.jpg"/>
+            <img id="item" class="item" src="../images/gallery-3.jpg"/>
+            <img id="item" class="item" src="../images/gallery-4.jpg"/>
+            <img id="item" class="item" src="../images/gallery-5.jpg"/>
+            <img id="item" class="item" src="../images/gallery-6.jpg"/>
+        </div>
+        <button id="next-btn" class="next-btn">
+            <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+            <path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+            </svg>
+        </button>
+        </div>
+    </div>
+
+    <div class="membership-sect">
+        <h1>Select Membership Type</h1>
+        <select id="membershipSelect" onchange="displayMembershipDetails()">
+            <option value="">--Select a Membership--</option>
+            <option value="single">Single Membership</option>
+            <option value="family">Family Membership</option>
+            <option value="weekday">Weekday Membership</option>
+            <option value="student">Student Membership</option>
+            <option value="senior">Senior Membership</option>
+            <option value="couple">Senior Couple Membership</option>
+            <option value="parent">Parent & Child Membership</option>
+        </select>
+
+        <div id="membershipDetails" class="details" style="display: none;"></div>
+
+        <div class="expandable-list">
+            
+        
+            <div class="title" onclick="toggleContent('singleMembership')">Single Membership</div>
+            <div class="content" id="singleMembership">
+                <ul>
+                    <li><b>$980 Annual (January-December)</b></li>
+                    <li>Single Membership entitles owner greens fees and discounted cart rental rates for a full year.</li>
+                </ul>
+            </div>
+        
+            <div class="title" onclick="toggleContent('familyMembership')">Family Membership</div>
+            <div class="content" id="familyMembership">
+                <ul>
+                    <li><b>$1320 Annual (January-December)</b></li>
+                    <li>Family membership (For parents and their legal dependents) green fees for a full year & discounted cart rental rates.</li>
+                </ul>
+            </div>
+
+            <div class="title" onclick="toggleContent('weekdayMember')">Weekday Member</div>
+            <div class="content" id="weekdayMember">
+                <ul>
+                    <li><b>$830 Annual (January-December)</b></li>
+                    <li>Weekday membership entitles owner to green fees and discounted cart rental rates Monday-Friday (excluding holidays) for a full year.</li>
+                </ul>
+            </div>
+
+            <div class="title" onclick="toggleContent('studentMembership')">Student Membership</div>
+            <div class="content" id="studentMembership">
+                <ul>
+                    <li><b>$525 Annual (January-December)</b></li>
+                    <li>Student membership requires 12+ credit hours, it entitles owner to greens fees and discounted cart rental rates for a full year.</li>
+                </ul>
+            </div>
+
+            <div class="title" onclick="toggleContent('seniorMembership')">Senior Membership</div>
+            <div class="content" id="seniorMembership">
+                <ul>
+                    <li><b>$870 Annual (January-December)</b></li>
+                    <li>Single Membership for a Senior (60 plus), entitles owner greens fees for a full year & discounted cart rental rates.</li>
+                </ul>
+            </div>
+        
+            <div class="title" onclick="toggleContent('seniorCoupleMembership')">Senior Couple Membership</div>
+            <div class="content" id="seniorCoupleMembership">
+                <ul>
+                    <li><b>$1045 Annual (January-December)</b></li>
+                    <li>Single couple membership for 2 senior partners (60 plus), entitles owners to greens fees for a full year & discounted cart rental rates.</li>
+                </ul>
+            </div>
+        
+        
+            <div class="title" onclick="toggleContent('parentChildMembership')">Parent & Child Membership</div>
+            <div class="content" id="parentChildMembership">
+                <ul>
+                    <li><b>$1160 Annual (January-December)</b></li>
+                    <li>Parent & Child Membership is valid for 1 parent & 1 child. Includes green fees for a full year & discounted cart rental rates.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#home" target="_blank" class="logo">
+                    <img src="../images/logo.png" alt="Colonial Hills Golf Club Logo">
+                </a>
+            </div>
+    
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <span class="contact-text">434.525.3954</span>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <span class="contact-text">info@colonialhillsgolf.com</span>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span class="contact-text">1990 Gumtree Rd, Forest, VA 24551</span>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-container">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <span class="contact-text">Connect on Facebook</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Colonial Hills Golf Club. All rights reserved.</p>
+        </div>
+    </div>
+    
+
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
+
+
+
+
+
+    
