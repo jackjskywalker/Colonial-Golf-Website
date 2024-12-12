@@ -175,11 +175,13 @@ function displayMembershipDetails() {
 
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".menu");
+// script.js
 
-    menuToggle.addEventListener("click", function() {
-        menu.classList.toggle("active");
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
     });
 });
