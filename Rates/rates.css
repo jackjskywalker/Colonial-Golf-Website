@@ -395,3 +395,47 @@ button{
         gap: 0.5em;
     }
 }
+
+/* Rates Page Responsive Design */
+@media (max-width: 768px) {
+    .pricing-sect {
+        padding: 3em 10%;
+    }
+
+    select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .expandable-list .title {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .expandable-list .content ul li {
+        font-size: 14px;
+    }
+
+    .details {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-sect {
+        padding: 2em 5%;
+    }
+
+    .expandable-list .title {
+        font-size: 14px;
+    }
+
+    .expandable-list .content ul li {
+        font-size: 13px;
+    }
+
+    .details {
+        font-size: 13px;
+    }
+}

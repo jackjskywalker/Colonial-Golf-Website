@@ -288,3 +288,80 @@ textarea {
         gap: 0.5em;
     }
 }
+
+/* Contact Page Responsive Design */
+@media (max-width: 768px) {
+    .contact-sect {
+        padding: 3em 10%;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+
+    .team-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .email-button {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-sect {
+        padding: 2em 5%;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        font-size: 13px;
+    }
+
+    .team-photo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .email-button {
+        font-size: 13px;
+        padding: 8px 20px;
+    }
+}

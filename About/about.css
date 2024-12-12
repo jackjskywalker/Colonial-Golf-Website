@@ -254,3 +254,63 @@ nav ul li a:hover::after {
         gap: 0.5em;
     }
 }
+
+/* About Page Responsive Design */
+@media (max-width: 768px) {
+    .story-sect {
+        padding: 3em 10%;
+    }
+
+    .story h1 {
+        font-size: 40px;
+    }
+
+    .story p {
+        line-height: 1.8;
+        font-size: 16px;
+    }
+
+    .club-info {
+        margin: 20px 0;
+    }
+
+    .box {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .box img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .text-box {
+        padding: 10px;
+    }
+
+    .text-box h1 {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .story h1 {
+        font-size: 30px;
+    }
+
+    .story p {
+        font-size: 14px;
+    }
+
+    .text-box h1 {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+}
