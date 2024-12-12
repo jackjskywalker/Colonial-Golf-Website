@@ -1,3 +1,5 @@
+/* index.css */
+
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -21,7 +23,7 @@ nav {
     flex-wrap: wrap;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 30px 20px;
@@ -53,9 +55,7 @@ nav ul li a:hover::after {
     padding: 10px 10%;
 }
 
-
-/**** Header Section ****/
-
+/* Header Section */
 .header-sect {
     width: 100%;
     height: 100vh;
@@ -86,8 +86,7 @@ nav ul li a:hover::after {
     background-color: #C3BA99;
 }
 
-/**** Welcome Section ****/
-
+/* Welcome Section */
 .welcome-sect {
     width: 100%;
     height: auto;
@@ -130,8 +129,7 @@ nav ul li a:hover::after {
     background-color: transparent;
 }
 
-/**** App Section ****/
-
+/* App Section */
 .app-sect {
     width: 100%;
     height: auto;
@@ -168,34 +166,33 @@ nav ul li a:hover::after {
 
 .left-column img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 .right-column {
     flex: 1;
     padding: 3em;
-    text-align: center; 
+    text-align: center;
     flex-direction: column;
     align-items: center;
 }
 
 .right-column img {
     max-width: 50%;
-    height: auto; 
+    height: auto;
     margin: 0.5em;
 }
 
 .right-column img:hover {
-    transform: translate(2px,-2px);
+    transform: translate(2px, -2px);
 }
 
 .right-column p {
     margin: 0.5em;
 }
 
-/**** Carousel Section ****/
-
-button{
+/* Carousel Section */
+button {
     border: none;
     cursor: pointer;
     color: white;
@@ -204,68 +201,68 @@ button{
 }
 
 .carousel-section {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  background-color: #C3BA99;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #C3BA99;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-section h1 {
     font-size: 45px;
-    margin-top: 2em; 
+    margin-top: 2em;
     margin-bottom: 0.25em;
-    color: #333
-  }  
+    color: #333;
+}
 
 .carousel-view {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.25s ease-in;
-  padding-bottom: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.25s ease-in;
+    padding-bottom: 3em;
 }
 
 .carousel-view .item-list {
-  max-width: 80%;
-  width: 80vw;
-  padding: 30px 20px;
-  display: flex;
-  gap: 20px;
-  scroll-behavior: smooth;
-  transition: all 0.25s ease-in;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  overflow: auto;
-  scroll-snap-type: x mandatory;
+    max-width: 80%;
+    width: 80vw;
+    padding: 30px 20px;
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow: auto;
+    scroll-snap-type: x mandatory;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .item-list::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .prev-btn {
-  background: none;
-  cursor: pointer;
+    background: none;
+    cursor: pointer;
 }
 
 .next-btn {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .item {
-  scroll-snap-align: center;
-  min-width: 300px;
-  height: auto;
-  background-color: #C3BA99;
-  border-radius: 5px;
+    scroll-snap-align: center;
+    min-width: 300px;
+    height: auto;
+    background-color: #C3BA99;
+    border-radius: 5px;
 }
 
-/**** Footer Section ****/
+/* Footer Section */
 .footer {
     background-color: #333;
     text-align: center;
@@ -339,46 +336,28 @@ button{
     padding: 1em 0;
 }
 
-/* Additional Responsive Design */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
-    .contact-info {
-        flex-direction: column;
-        gap: 0.5em;
-    }
-}
-
-/* Additional Responsive Design */
-@media (max-width: 768px) {
-    /* General adjustments */
     .container {
         padding: 10px 5%;
     }
 
-    nav ul li {
-        margin: 15px 10px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-
     .header-text {
         font-size: 20px;
-        margin-top: 30%;
+        margin-top: 15%;
     }
 
     .btn {
-        padding: 15px 35px;
+        padding: 15px 30px;
         font-size: 16px;
     }
 
-    /* Welcome Section */
     .welcome-sect {
-        padding: 5em 5%;
+        padding: 4em 5%;
     }
 
-    .welcome-text {
-        font-size: 18px;
+    .welcome-text p {
+        font-size: 16px;
     }
 
     .white-btn {
@@ -386,13 +365,8 @@ button{
         font-size: 16px;
     }
 
-    /* App Section */
     .app-sect {
         padding: 3em 5%;
-    }
-
-    .app-text {
-        margin: 1em 0;
     }
 
     .app-text h1 {
@@ -405,32 +379,29 @@ button{
 
     .content {
         flex-direction: column;
+        align-items: center;
     }
 
-    .left-column img {
-        max-width: 80%;
-    }
-
-    .right-column {
-        padding: 1em;
+    .left-column, .right-column {
+        padding: 2em 0;
     }
 
     .right-column img {
-        max-width: 60%;
+        max-width: 70%;
     }
 
-    /* Carousel Section */
     .carousel-section h1 {
         font-size: 35px;
     }
 
-    .item {
-        min-width: 200px;
+    .carousel-view .item-list {
+        max-width: 100%;
+        width: 100vw;
+        padding: 20px 10px;
     }
 
-    /* Footer Section */
     .footer-content {
-        padding: 1.5em 0;
+        padding: 1em 0;
     }
 
     .footer-logo img {
@@ -439,47 +410,27 @@ button{
 
     .contact-info {
         flex-direction: column;
-        gap: 1em;
-    }
-
-    .contact-item {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .contact-text {
-        display: inline-block;
-        font-size: 1em;
+        gap: 0.5em;
     }
 }
 
 @media (max-width: 480px) {
-    /* General adjustments for smaller phones */
-    nav ul li {
-        margin: 10px 5px;
-    }
-
-    nav ul li a {
-        font-size: 14px;
-    }
-
     .header-text {
         font-size: 18px;
-        margin-top: 40%;
+        margin-top: 10%;
     }
 
     .btn {
-        padding: 10px 25px;
+        padding: 10px 20px;
         font-size: 14px;
     }
 
-    /* Welcome Section */
     .welcome-sect {
-        padding: 3em 5%;
+        padding: 3em 2%;
     }
 
-    .welcome-text {
-        font-size: 16px;
+    .welcome-text p {
+        font-size: 14px;
     }
 
     .white-btn {
@@ -487,42 +438,27 @@ button{
         font-size: 14px;
     }
 
-    /* App Section */
+    .app-sect {
+        padding: 2em 2%;
+    }
+
     .app-text h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .app-description {
         font-size: 14px;
     }
 
-    .content {
-        flex-direction: column;
-    }
-
-    .left-column img {
-        max-width: 100%;
-    }
-
     .right-column img {
-        max-width: 70%;
+        max-width: 60%;
     }
 
-    /* Carousel Section */
     .carousel-section h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
-    .item {
-        min-width: 150px;
-    }
-
-    /* Footer Section */
     .footer-logo img {
-        max-width: 12em;
-    }
-
-    .contact-text {
-        font-size: 0.9em;
+        max-width: 10em;
     }
 }
