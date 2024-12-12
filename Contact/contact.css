@@ -289,10 +289,35 @@ textarea {
     }
 }
 
-/* Contact Page Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 10px 5%;
+    }
+
+    nav ul li {
+        margin: 15px 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .header-text {
+        font-size: 30px;
+        margin-top: 20%;
+    }
+
+    .btn {
+        padding: 15px 35px;
+        font-size: 16px;
+    }
+
     .contact-sect {
-        padding: 3em 10%;
+        padding: 3em 5%;
+    }
+
+    .contact-title {
+        font-size: 1.75em;
     }
 
     form {
@@ -305,23 +330,32 @@ textarea {
 
     input[type="text"],
     input[type="email"],
+    input[type="tel"],
     select,
     textarea {
+        padding: 8px;
         font-size: 14px;
     }
 
     .submit-btn {
+        padding: 8px;
         font-size: 14px;
-        padding: 10px 20px;
+    }
+
+    .team-section {
+        padding: 3em 5%;
+    }
+
+    .team-section h2 {
+        font-size: 2em;
     }
 
     .team-container {
-        flex-direction: column;
         gap: 2em;
     }
 
     .team-member {
-        width: 100%;
+        width: 200px;
     }
 
     .team-photo {
@@ -329,39 +363,119 @@ textarea {
         height: 80px;
     }
 
-    .email-button {
+    .member-info p {
         font-size: 14px;
+    }
+
+    .email-button {
         padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .footer-logo img {
+        max-width: 15em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-text {
+        display: inline-block;
+        font-size: 1em;
     }
 }
 
 @media (max-width: 480px) {
+    nav ul li {
+        margin: 10px 5px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .header-text {
+        font-size: 24px;
+        margin-top: 30%;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
     .contact-sect {
         padding: 2em 5%;
+    }
+
+    .contact-title {
+        font-size: 1.5em;
     }
 
     form {
         padding: 15px;
     }
 
+    label {
+        font-size: 12px;
+    }
+
     input[type="text"],
     input[type="email"],
+    input[type="tel"],
     select,
     textarea {
-        font-size: 13px;
+        padding: 6px;
+        font-size: 12px;
     }
 
     .submit-btn {
-        font-size: 13px;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .team-section {
+        padding: 2em 5%;
+    }
+
+    .team-section h2 {
+        font-size: 1.75em;
+    }
+
+    .team-container {
+        gap: 1.5em;
+    }
+
+    .team-member {
+        width: 180px;
     }
 
     .team-photo {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .member-info p {
+        font-size: 12px;
     }
 
     .email-button {
-        font-size: 13px;
-        padding: 8px 20px;
+        padding: 8px 25px;
+        font-size: 12px;
+    }
+
+    .footer-logo img {
+        max-width: 12em;
+    }
+
+    .contact-text {
+        font-size: 0.9em;
     }
 }

@@ -336,28 +336,38 @@ button {
     padding: 1em 0;
 }
 
-/* Responsive Design for Mobile */
+/* Additional Responsive Design */
 @media (max-width: 768px) {
+    /* General adjustments */
     .container {
         padding: 10px 5%;
     }
 
+    nav ul li {
+        margin: 15px 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
     .header-text {
         font-size: 20px;
-        margin-top: 15%;
+        margin-top: 30%;
     }
 
     .btn {
-        padding: 15px 30px;
+        padding: 15px 35px;
         font-size: 16px;
     }
 
+    /* Welcome Section */
     .welcome-sect {
-        padding: 4em 5%;
+        padding: 5em 5%;
     }
 
-    .welcome-text p {
-        font-size: 16px;
+    .welcome-text {
+        font-size: 18px;
     }
 
     .white-btn {
@@ -365,8 +375,13 @@ button {
         font-size: 16px;
     }
 
+    /* App Section */
     .app-sect {
         padding: 3em 5%;
+    }
+
+    .app-text {
+        margin: 1em 0;
     }
 
     .app-text h1 {
@@ -379,29 +394,32 @@ button {
 
     .content {
         flex-direction: column;
-        align-items: center;
     }
 
-    .left-column, .right-column {
-        padding: 2em 0;
+    .left-column img {
+        max-width: 80%;
+    }
+
+    .right-column {
+        padding: 1em;
     }
 
     .right-column img {
-        max-width: 70%;
+        max-width: 60%;
     }
 
+    /* Carousel Section */
     .carousel-section h1 {
         font-size: 35px;
     }
 
-    .carousel-view .item-list {
-        max-width: 100%;
-        width: 100vw;
-        padding: 20px 10px;
+    .item {
+        min-width: 200px;
     }
 
+    /* Footer Section */
     .footer-content {
-        padding: 1em 0;
+        padding: 1.5em 0;
     }
 
     .footer-logo img {
@@ -410,27 +428,47 @@ button {
 
     .contact-info {
         flex-direction: column;
-        gap: 0.5em;
+        gap: 1em;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-text {
+        display: inline-block;
+        font-size: 1em;
     }
 }
 
 @media (max-width: 480px) {
+    /* General adjustments for smaller phones */
+    nav ul li {
+        margin: 10px 5px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
     .header-text {
         font-size: 18px;
-        margin-top: 10%;
+        margin-top: 40%;
     }
 
     .btn {
-        padding: 10px 20px;
+        padding: 10px 25px;
         font-size: 14px;
     }
 
+    /* Welcome Section */
     .welcome-sect {
-        padding: 3em 2%;
+        padding: 3em 5%;
     }
 
-    .welcome-text p {
-        font-size: 14px;
+    .welcome-text {
+        font-size: 16px;
     }
 
     .white-btn {
@@ -438,27 +476,42 @@ button {
         font-size: 14px;
     }
 
-    .app-sect {
-        padding: 2em 2%;
-    }
-
+    /* App Section */
     .app-text h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .app-description {
         font-size: 14px;
     }
 
+    .content {
+        flex-direction: column;
+    }
+
+    .left-column img {
+        max-width: 100%;
+    }
+
     .right-column img {
-        max-width: 60%;
+        max-width: 70%;
     }
 
+    /* Carousel Section */
     .carousel-section h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
+    .item {
+        min-width: 150px;
+    }
+
+    /* Footer Section */
     .footer-logo img {
-        max-width: 10em;
+        max-width: 12em;
+    }
+
+    .contact-text {
+        font-size: 0.9em;
     }
 }
