@@ -310,12 +310,13 @@ button {
     align-items: center;
     border-radius: 15px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer; /* Change cursor to pointer to indicate clickability */
 }
 
 .icon-link {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit color from parent */
-    display: inline-block; /* Ensure it takes up space like a block element */
+    display: none; /* Ensure it takes up space like a block element */
 }
 
 .icon-container {
@@ -329,10 +330,9 @@ button {
     color: #333;
     font-size: 1.5em;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    cursor: pointer; /* Change cursor to pointer to indicate clickability */
 }
 
-.icon-link:hover .icon-container {
+.icon-link:hover .contact-item {
     background-color: #eee; /* Optional: Change background on hover */
     transform: scale(1.1); /* Optional: Slightly enlarge on hover */
 }
