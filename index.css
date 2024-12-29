@@ -471,6 +471,7 @@ button {
         display: inline-block;
         font-size: 1em;
         color: white;
+        padding-bottom: 0.25em;
     }
 }
 
@@ -545,5 +546,7 @@ button {
 
     .contact-text {
         font-size: 0.9em;
+        color: white;
+        padding-bottom: 0.25em;
     }
 }
