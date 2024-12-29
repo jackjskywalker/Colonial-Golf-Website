@@ -379,19 +379,28 @@ button {
         display: none;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        justify-content: center;
+        position: fixed; /* Position the menu fixed to cover the viewport */
+        top: 0;
+        left: 0;
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        background-color: #C3BA99; /* Set background color */
+        z-index: 1000; /* Ensure it appears above other content */
     }
 
     nav ul.menu.active {
-        display: flex;
+        display: flex; /* Show the menu when active */
     }
 
     nav ul.menu li {
-        margin: 15px 10px;
+        margin: 20px 0; /* Center items vertically with some spacing */
     }
 
     nav ul.menu li a {
-        font-size: 16px;
+        font-size: 24px; /* Increase font size for better visibility */
+        color: white; /* Ensure text color contrasts with background */
+        text-decoration: none;
     }
 
     .header-text {
@@ -483,7 +492,7 @@ button {
         display: inline-block;
         font-size: 1em;
         color: white;
-        padding-bottom: 0.25em;
+        padding-bottom: 0.75em;
     }
 }
 
@@ -559,6 +568,6 @@ button {
     .contact-text {
         font-size: 0.9em;
         color: white;
-        padding-bottom: 0.25em;
+        padding-bottom: 0.75em;
     }
 }
