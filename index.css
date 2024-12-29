@@ -403,6 +403,22 @@ button {
         text-decoration: none;
     }
 
+    .menu-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1001; /* Ensure it appears above the menu items */
+    }
+    
+    .menu-close:hover {
+        color: #fff; /* Optional: Change color on hover for better UX */
+    }
+
     .header-text {
         font-size: 20px;
         margin-top: 30%;

@@ -179,9 +179,14 @@ function displayMembershipDetails() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
+    const menuClose = document.querySelector('.menu-close');
     const menu = document.querySelector('.menu');
 
     menuToggle.addEventListener('click', () => {
         menu.classList.toggle('active');
+    });
+
+    menuClose.addEventListener('click', () => {
+        menu.classList.remove('active');
     });
 });
