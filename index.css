@@ -470,6 +470,7 @@ button {
     .contact-text {
         display: inline-block;
         font-size: 1em;
+        color: white;
     }
 }
 
