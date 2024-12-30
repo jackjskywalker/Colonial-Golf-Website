@@ -384,10 +384,6 @@ button {
         display: block;
     }
 
-    nav {
-        background-color: #C3BA99;
-    }
-
     nav ul.menu {
         display: none;
         flex-direction: column;
