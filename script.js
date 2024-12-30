@@ -182,11 +182,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuClose = document.querySelector('.menu-close');
     const menu = document.querySelector('.menu');
 
-    menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('active');
-    });
+    console.log('Menu Toggle:', menuToggle);
+    console.log('Menu Close:', menuClose);
+    console.log('Menu:', menu);
 
-    menuClose.addEventListener('click', () => {
-        menu.classList.remove('active');
-    });
+    if (menuToggle && menuClose && menu) {
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            console.log('Menu Toggled');
+        });
+
+        menuClose.addEventListener('click', () => {
+            menu.classList.remove('active');
+            console.log('Menu Closed');
+        });
+    } else {
+        console.error('Menu elements not found');
+    }
 });
