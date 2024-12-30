@@ -517,6 +517,7 @@ button {
     .contact-item {
         flex-direction: column;
         text-align: center;
+        transform: none;
     }
 
     .contact-text {
@@ -589,11 +590,6 @@ button {
     /* Carousel Section */
     .carousel-section h1 {
         font-size: 28px;
-    }
-
-    /* Footer Section */
-    .footer-logo img {
-        max-width: 12em;
     }
 
     .contact-text {

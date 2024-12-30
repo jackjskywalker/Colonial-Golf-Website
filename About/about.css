@@ -333,7 +333,7 @@ nav ul li a:hover::after {
     .box {
         flex-direction: column;
         gap: 10px;
-        margin: 20px 0;
+        margin: 20px;
     }
 
     .box img {
@@ -449,7 +449,7 @@ nav ul li a:hover::after {
     .box {
         flex-direction: column;
         gap: 10px;
-        margin: 15px 0;
+        margin: 15px;
     }
 
     .box img {
@@ -462,10 +462,6 @@ nav ul li a:hover::after {
 
     .description {
         font-size: 12px;
-    }
-
-    .footer-logo img {
-        max-width: 12em;
     }
 
     .contact-text {
