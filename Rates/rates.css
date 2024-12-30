@@ -14,6 +14,24 @@ body {
     background-color: #C3BA99;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-close {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -51,6 +69,24 @@ nav ul li a:hover::after {
 
 .container {
     padding: 10px 10%;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-close {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /**** Header Section ****/
@@ -348,6 +384,12 @@ button{
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.icon-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+    display: inline-block; /* Ensure it takes up space like a block element */
+}
+
 .icon-container {
     width: 40px;
     height: 40px;
@@ -359,6 +401,12 @@ button{
     color: #333;
     font-size: 1.5em;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer; /* Change cursor to pointer to indicate clickability */
+}
+
+.icon-link:hover .icon-container {
+    background-color: #eee; /* Optional: Change background on hover */
+    transform: scale(1.1); /* Optional: Slightly enlarge on hover */
 }
 
 .contact-text {
@@ -396,19 +444,49 @@ button{
     }
 }
 
-/* Existing styles ... */
-
 @media (max-width: 768px) {
+
     .container {
         padding: 10px 5%;
     }
 
-    nav ul li {
-        margin: 15px 10px;
+    .menu-toggle {
+        display: block;
     }
 
-    nav ul li a {
-        font-size: 16px;
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #C3BA99;
+        z-index: 1000;
+    }
+
+    nav ul.menu.active {
+        display: flex;
+    }
+
+    nav ul.menu li {
+        margin: 20px 0; /* Center items vertically with some spacing */
+    }
+
+    nav ul.menu li a {
+        font-size: 24px; /* Increase font size for better visibility */
+        color: white; /* Ensure text color contrasts with background */
+        text-decoration: none;
+    }
+
+    .menu-close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 
     .header-text {
@@ -491,6 +569,8 @@ button{
     .contact-text {
         display: inline-block;
         font-size: 1em;
+        color: white;
+        padding-bottom: 0.75em;
     }
 }
 
@@ -572,5 +652,7 @@ button{
 
     .contact-text {
         font-size: 0.9em;
+        color: white;
+        padding-bottom: 0.75em;
     }
 }
