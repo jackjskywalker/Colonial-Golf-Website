@@ -517,6 +517,9 @@ button {
     .contact-item {
         flex-direction: column;
         text-align: center;
+    }
+
+    .contact-item:hover {
         transform: none;
     }
 
