@@ -459,8 +459,9 @@ textarea {
         text-align: center;
     }
 
-    .contact-item:hover {
-        transform: none;
+    .icon-link:hover .icon-container {
+        background-color: inherit; /* No background change */
+        transform: inherit; /* No scaling */
     }
 
     .contact-text {
