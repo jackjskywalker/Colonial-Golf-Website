@@ -3,6 +3,20 @@ const prev = document.getElementById('prev-btn')
 const next = document.getElementById('next-btn')
 const list = document.getElementById('item-list')
 
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuClose = document.querySelector('.menu-close');
+    const menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+
+    menuClose.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
+});
+
 const itemWidth = 150
 const padding = 10
 
@@ -175,28 +189,3 @@ function displayMembershipDetails() {
 
 }
 
-// script.js
-
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menuClose = document.querySelector('.menu-close');
-    const menu = document.querySelector('.menu');
-
-    console.log('Menu Toggle:', menuToggle);
-    console.log('Menu Close:', menuClose);
-    console.log('Menu:', menu);
-
-    if (menuToggle && menuClose && menu) {
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-            console.log('Menu Toggled');
-        });
-
-        menuClose.addEventListener('click', () => {
-            menu.classList.remove('active');
-            console.log('Menu Closed');
-        });
-    } else {
-        console.error('Menu elements not found');
-    }
-});
