@@ -362,6 +362,10 @@ nav ul li a:hover::after {
         text-align: center;
     }
 
+    .contact-item:hover {
+        transform: none;
+    }
+
     .contact-text {
         display: inline-block;
         font-size: 1em;
